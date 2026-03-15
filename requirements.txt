@@ -1,4 +1,20 @@
+```
 streamlit
 google-generativeai
 python-dotenv
 pdf2image
+Pillow
+```
+
+Note: `pdf2image` also needs `poppler` installed on the system. Add this to your README so anyone running it locally knows:
+```
+# On Mac:
+brew install poppler
+
+# On Ubuntu/Linux:
+sudo apt-get install poppler-utils
+```
+
+For Streamlit Cloud deployment, create a file called `packages.txt` in the root with just:
+```
+poppler-utils
